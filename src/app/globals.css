@@ -1,0 +1,78 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 224 25% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 25% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 25% 18%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 26 100% 50%; /* Orange */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+    --radius: 1rem;
+
+    /* CODLYNE Palette */
+    --cod-bg: 220 11% 8%; /* #0f1115 */
+    --cod-card: 220 10% 9%; /* #121316 */
+    --cod-border: 220 9% 15%; /* #25282C */
+    --cod-navy: 205 65% 12%; /* #0B2233 */
+    --cod-orange: 28 100% 50%; /* #FF7A00 */
+    --cod-muted: 216 8% 64%; /* #9AA3AD */
+    --cod-glow: 28 100% 50%;
+  }
+
+  .dark {
+    --background: var(--cod-bg);
+    --foreground: 210 40% 98%;
+    --card: var(--cod-card);
+    --card-foreground: 210 40% 98%;
+    --popover: var(--cod-card);
+    --popover-foreground: 210 40% 98%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: var(--cod-muted);
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: var(--cod-orange);
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: var(--cod-border);
+    --input: var(--cod-border);
+    --ring: var(--cod-orange);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+    .card-shadow {
+        box-shadow: 0 8px 30px rgba(3,6,12,0.65);
+    }
+}
