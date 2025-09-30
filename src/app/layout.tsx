@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: 'FlowiFy',
   description: 'Gestão de pedidos com Cash On Delivery (COD)',
   icons: {
-    icon: 'https://i.imgur.com/V7TXbKC.png',
+    icon: '/favicon.ico',
   },
 };
 
